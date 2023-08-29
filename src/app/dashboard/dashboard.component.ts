@@ -7,6 +7,9 @@ import { Component } from '@angular/core';
 })
 export class DashboardComponent {
 
+  constructor(){
+
+  }
 
   access_blocks:any[] = [
     {path:"#hero" , label:"Home"},
