@@ -1,0 +1,17 @@
+.background_image{
+  transform: translateY(-250px);
+  width:100%;
+  position:fixed;
+}
+
+app-panel{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  width: 70vw;
+  height: 20vw;
+  background-color: rgba(137,209,206,0.4);
+  border-radius: 5px;
+}

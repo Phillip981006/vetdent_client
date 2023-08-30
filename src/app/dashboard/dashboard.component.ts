@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AuthService } from '../_services/auth.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -7,15 +8,23 @@ import { Component } from '@angular/core';
 })
 export class DashboardComponent {
 
-  constructor(){
+  access_blocks:any[] = [
+    {path:"#hero" , blockLabel:"Home"}
+  ]
 
+  constructor(private auth: AuthService){
+
+    this.auth.access_blocks_subject.subscribe((data)=>{
+
+      this.access_blocks = data;
+      console.log("ththththththth")
+    })
+
+    this.auth.get_user_access();
   }
 
-  access_blocks:any[] = [
-    {path:"#hero" , label:"Home"},
-    {path:"#about" , label:"About"},
-    {path:"#services" , label:"Services"},
-    {path:"#contact" , label:"Contact"}
-  ]
+
+
+
 
 }

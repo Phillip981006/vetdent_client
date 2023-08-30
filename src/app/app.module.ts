@@ -7,13 +7,17 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LandingComponent } from './landing/landing.component';
 import { AuthComponent } from './auth/auth.component';
+import { LoginFormComponent } from './auth/login-form/login-form.component';
+import { PanelComponent } from './auth/panel/panel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     LandingComponent,
-    AuthComponent
+    AuthComponent,
+    LoginFormComponent,
+    PanelComponent
   ],
   imports: [
     BrowserModule,
