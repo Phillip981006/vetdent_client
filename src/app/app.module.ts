@@ -9,6 +9,7 @@ import { LandingComponent } from './landing/landing.component';
 import { AuthComponent } from './auth/auth.component';
 import { LoginFormComponent } from './auth/login-form/login-form.component';
 import { PanelComponent } from './auth/panel/panel.component';
+import { RegisterFormComponent } from './auth/register-form/register-form.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { PanelComponent } from './auth/panel/panel.component';
     LandingComponent,
     AuthComponent,
     LoginFormComponent,
-    PanelComponent
+    PanelComponent,
+    RegisterFormComponent
   ],
   imports: [
     BrowserModule,

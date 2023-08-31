@@ -1,0 +1,66 @@
+.col_wrapper{
+  height:20vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.content_wrapper{
+  margin: auto;
+}
+.auth_buttons{
+  border-color: white !important;
+  color: white !important;
+  width: 150px;
+}
+.auth_buttons:hover{
+background-color: rgb(255, 255, 255, 0.4);
+color:rgba(137,209,206) !important ;
+border-color: rgba(137,209,206)!important;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.white-panel{
+  background-color: white;
+  width: 48%;
+  position: absolute;
+  top: -15px;
+  left:15px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.panel-image{
+  height: 100px;
+}
+
+.heading{
+  margin: 20px;
+}
+
+.block_move_right {
+  position: absolute;
+  animation-name: move_right;
+  animation-duration: 1s;
+  left:50%;
+}
+
+@keyframes move_right {
+  0%   { left:15px; top:-15px;}
+  100%  { left:50%; top:-15px;}
+}
+
+.block_move_left {
+  position: absolute;
+  animation-name: move_left;
+  animation-duration: 1s;
+  left:15px;
+}
+
+@keyframes move_left {
+  0% { left:50%; top:-15px;}
+  100% { left:15px; top:-15px;}
+}

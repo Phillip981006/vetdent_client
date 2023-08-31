@@ -1,0 +1,23 @@
+.input-field{
+background-color: rgb(150, 193, 201,0.5);
+padding: 15px;
+margin: 20px;
+width: 90%;
+border:solid;
+border-width: 1px;
+border-color: grey;
+}
+.footer{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 20px;
+}
+.sign_in_button{
+  margin:20px;
+  width: 150px;
+  background-color: grey;
+  border: none;
+  padding:10px;
+  border-radius: 0px;
+}

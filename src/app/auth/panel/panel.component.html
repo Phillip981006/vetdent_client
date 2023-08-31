@@ -1,3 +1,33 @@
-<div>
-  <button>Login</button>
+<div class="container">
+  <div class="row" >
+    <div class="col-6 col_wrapper" >
+      <div class="content_wrapper" >
+        <h3 style="color: white;" >Have an account?</h3>
+        <p style="color: white" >Click here to log in</p>
+        <button (click)="go_to_login()" class="auth_buttons btn btn-outline-primary" >
+          Login
+        </button>
+      </div>
+    </div>
+    <div class="col-6 col_wrapper" >
+      <div class="content_wrapper" >
+        <h3 style="color: white;" >Don't have an account?</h3>
+        <p style="color: white" >Click here to apply for registration</p>
+        <button (click)="go_to_register()" class="auth_buttons btn btn-outline-primary" >
+          Register
+        </button>
+      </div>
+    </div>
+  </div>
 </div>
+
+<div #login_register_form class="white-panel" [class.block_move_right]="register" [class.block_move_left]="login" >
+  <div class="header">
+    <h3 class="heading" *ngIf="!register">LOGIN</h3>
+    <h3 class="heading" *ngIf="register">REGISTER</h3>
+    <img class="panel-image" src="../../../assets/images/Final-Logo_Full-colour-logo-with-tagline.jpg" alt="">
+  </div>
+  <app-login-form *ngIf="!register"></app-login-form>
+  <app-register-form *ngIf="register" ></app-register-form>
+</div>
+
