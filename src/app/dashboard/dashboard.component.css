@@ -1,0 +1,15 @@
+.dash_toast{
+  z-index: 10;
+  background-color: rgb(150, 193, 201,0.7);
+  width: 70vw;
+  position:absolute;
+  bottom: 20px;
+  left: 20px;
+  border: solid;
+  border-width: 1px;
+  border-color: grey;
+  border-radius:50px;
+  text-align: center;
+  padding:10px;
+  font-size: 20px;
+}
