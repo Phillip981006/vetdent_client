@@ -72,9 +72,14 @@ height:30vw;
 
 .send_icon{
   height:35px;
+  margin:10px;
+  border-radius: 5px;
 }
 
 
 .send_icon:hover{
-  background-color: rgba(134, 218, 252, 0.5);
+  transform: scale(1.2 , 1.2);
+}
+.send_icon:active{
+  transform: scale(0.8 , 0.8);
 }

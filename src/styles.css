@@ -1,3 +1,7 @@
+body{
+  
+}
+
 /* Customize WebKit (Chrome, Safari) scrollbars */
 ::-webkit-scrollbar {
   width: 1px; /* Width of the scrollbar */
@@ -19,3 +23,4 @@
 .element {
   -ms-overflow-style: none; /* Hide the scrollbar */
 }
+

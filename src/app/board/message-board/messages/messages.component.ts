@@ -28,12 +28,5 @@ export class MessagesComponent {
     {message:"ersible gate and a quantum gate is that the classical reversible gate can not handlesuperposition of states (qubit). Consequently, set of " , created_at:"2023/09/04 12:50" , user_id: 2 , message_owner_name: "Daniel"} ,
     {message:"ersible gate and a quantum gate is that the classical reversible gate can not handlesuperposition of states (qubit). Consequently, set of " , created_at:"2023/09/04 12:50" , user_id: 1 , message_owner_name: "stoney"} ,
     {message:"ersible gate and a quantum gate is that the classical reversible gate can not handlesuperposition of states (qubit). Consequently, set of " , created_at:"2023/09/04 12:50" , user_id: 1 , message_owner_name: "stoney"} ,
-    {message:"ersible gate and a quantum gate is that the classical reversible gate can not handlesuperposition of states (qubit). Consequently, set of " , created_at:"2023/09/04 12:50" , user_id: 1 , message_owner_name: "stoney"} ,
-    {message:"ersible gate and a quantum gate is that the classical reversible gate can not handlesuperposition of states (qubit). Consequently, set of " , created_at:"2023/09/04 12:50" , user_id: 1 , message_owner_name: "stoney"} ,
-    {message:"ersible gate and a quantum gate is that the classical reversible gate can not handlesuperposition of states (qubit). Consequently, set of " , created_at:"2023/09/04 12:50" , user_id: 1 , message_owner_name: "stoney"} ,
-    {message:"ersible gate and a quantum gate is that the classical reversible gate can not handlesuperposition of states (qubit). Consequently, set of " , created_at:"2023/09/04 12:50" , user_id: 1 , message_owner_name: "stoney"} ,
-    {message:"ersible gate and a quantum gate is that the classical reversible gate can not handlesuperposition of states (qubit). Consequently, set of " , created_at:"2023/09/04 12:50" , user_id: 1 , message_owner_name: "stoney"} ,
-    {message:"ersible gate and a quantum gate is that the classical reversible gate can not handlesuperposition of states (qubit). Consequently, set of " , created_at:"2023/09/04 12:50" , user_id: 1 , message_owner_name: "stoney"} ,
-    {message:"ersible gate and a quantum gate is that the classical reversible gate can not handlesuperposition of states (qubit). Consequently, set of " , created_at:"2023/09/04 12:50" , user_id: 1 , message_owner_name: "stoney"} ,
-  ]
+    ]
 }

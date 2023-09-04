@@ -38,3 +38,6 @@
 .profile_body_icon:hover{
   transform: scale(1.2,1.2);
 }
+.profile_body_icon:active{
+  transform: scale(0.8 , 0.8);
+}

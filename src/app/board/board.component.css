@@ -2,7 +2,7 @@
 
 .patients{
  overflow-y: scroll;
- height: 45vw;
+ height: 42vw;
 
 }
 
@@ -12,7 +12,7 @@
 
 .consultations{
   overflow-y: scroll;
-  height: 45vw;
+  height: 42vw;
 }
 
 .page{
