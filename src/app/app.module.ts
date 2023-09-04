@@ -15,6 +15,16 @@ import { PanelComponent } from './auth/panel/panel.component';
 import { RegisterFormComponent } from './auth/register-form/register-form.component';
 import { BoardComponent } from './board/board.component';
 import { ProfileComponent } from './profile/profile.component';
+import { CompanyComponent } from './company/company.component';
+import { SubscriptionsComponent } from './subscriptions/subscriptions.component';
+import { PracticeComponent } from './practice/practice.component';
+import { ClientsComponent } from './clients/clients.component';
+import { PatientBoardComponent } from './board/patient-board/patient-board.component';
+import { MessageBoardComponent } from './board/message-board/message-board.component';
+import { ConsultBoardComponent } from './board/consult-board/consult-board.component';
+import { AddPatientComponent } from './board/patient-board/add-patient/add-patient.component';
+import { PatientProfileComponent } from './board/message-board/patient-profile/patient-profile.component';
+import { MessagesComponent } from './board/message-board/messages/messages.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +36,17 @@ import { ProfileComponent } from './profile/profile.component';
     PanelComponent,
     RegisterFormComponent,
     BoardComponent,
-    ProfileComponent
+    ProfileComponent,
+    CompanyComponent,
+    SubscriptionsComponent,
+    PracticeComponent,
+    ClientsComponent,
+    PatientBoardComponent,
+    MessageBoardComponent,
+    ConsultBoardComponent,
+    AddPatientComponent,
+    PatientProfileComponent,
+    MessagesComponent
   ],
   imports: [
     BrowserModule,

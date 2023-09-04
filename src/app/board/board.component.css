@@ -1,0 +1,20 @@
+
+
+.patients{
+ overflow-y: scroll;
+ height: 45vw;
+
+}
+
+.coms{
+
+}
+
+.consultations{
+  overflow-y: scroll;
+  height: 45vw;
+}
+
+.page{
+
+}

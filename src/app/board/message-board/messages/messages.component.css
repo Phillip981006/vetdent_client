@@ -1,0 +1,80 @@
+.message_outgoing{
+width: 80%;
+background-color: rgba(120, 236, 252, 0.151);
+border: solid;
+border-width: 1px;
+border-color: rgba(120, 237, 252, 0.514);
+padding: 5px;
+padding-right:10px;
+padding-left:10px;
+margin:5px;
+border-radius: 15px;
+border-bottom-right-radius: 0px;
+position: relative;
+margin-left: 15%;
+
+}
+
+.message_timestamp_outgoing{
+  display: flex;
+  justify-content: end;
+  color:grey;
+  font-size: 13px;
+}
+
+.message_owner_name_incoming{
+  display: flex;
+  justify-content: end;
+  color:rgba(120, 252, 164);
+  margin-top: 5px;
+}
+
+.message_body_outgoing{
+  display: flex;
+  justify-content: end;
+}
+
+.chat{
+overflow-y: scroll;
+height:30vw;
+}
+
+.message_incoming{
+  width: 80%;
+  background-color: rgba(120, 252, 164, 0.151);
+  border: solid;
+  border-width: 1px;
+  border-color: rgba(120, 252, 164, 0.514);
+  padding: 5px;
+  padding-left:10px;
+  margin:5px;
+  border-radius: 15px;
+  border-bottom-left-radius: 0px;
+  position: relative;
+}
+
+.message_timestamp_incoming{
+
+  right: 2px;
+  bottom: 2px;
+  color:grey;
+  font-size: 13px;
+}
+.message_owner_name_outgoing{
+  color:rgba(120, 237, 252) ;
+  margin-top: 5px;
+}
+
+.send_msg_wrapper{
+  display: flex;
+  flex-direction: row;
+}
+
+.send_icon{
+  height:35px;
+}
+
+
+.send_icon:hover{
+  background-color: rgba(134, 218, 252, 0.5);
+}

@@ -1,0 +1,23 @@
+<div class="container mt-5 chat" >
+  <div [ngClass]="user_id == msg.user_id ? 'message_outgoing' : 'message_incoming'"   *ngFor="let msg of messages" >
+    <p [ngClass]="user_id == msg.user_id ? 'message_owner_name_outgoing' : 'message_owner_name_incoming'" class="message_timestamp"  ><strong>{{msg.message_owner_name}}</strong></p>
+    <p [ngClass]="user_id == msg.user_id ? 'message_body_outgoing' : 'message_body_incoming'">{{msg.message}}</p>
+    <p [ngClass]="user_id == msg.user_id ? 'message_timestamp_outgoing' : 'message_timestamp_incoming'" class="message_timestamp" >{{msg.created_at}}</p>
+  </div>
+</div>
+
+<div class="container-fluid" >
+
+<div class="container mt-5">
+  <div >
+    <form>
+      <div>
+        <div class="mb-3 send_msg_wrapper">
+          <input type="text" class="form-control" id="messageInput" placeholder="Send a message...">
+          <img  class="m-2 send_icon" src="../../../../assets/icon/send.svg" alt="">
+        </div>
+      </div>
+    </form>
+  </div>
+
+</div>

@@ -57,7 +57,7 @@ export class HttpService {
 
   get_user_profile(api_key:string){
 
-    return this.http.get<profile_res>(env.backend_location + "api/Profile" + api_key );
+    return this.http.get<profile_res>(env.backend_location + "api/Profile/" + api_key );
 
   }
 

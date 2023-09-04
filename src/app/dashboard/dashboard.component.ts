@@ -10,7 +10,7 @@ export class DashboardComponent {
 
   toast_message:string = "no message to display at this moment in time please check again later "
 
-  logged_in:boolean = false;
+
 
   access_blocks_location_1:any[] = [
     {path:"#hero" , blockLabel:"Home"}

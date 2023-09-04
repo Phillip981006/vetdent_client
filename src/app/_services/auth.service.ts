@@ -3,6 +3,7 @@ import { HttpService } from './http.service';
 import { Subject } from 'rxjs';
 import { LocalstorageService } from './localstorage.service';
 import { env } from '../__env';
+import { Router } from '@angular/router';
 
 
 @Injectable({
@@ -12,7 +13,8 @@ export class AuthService {
 
   constructor(
     private http: HttpService,
-    private localstorage: LocalstorageService
+    private localstorage: LocalstorageService,
+    private router: Router
     ) { }
 
     user_access:any[]=[];
@@ -47,13 +49,24 @@ export class AuthService {
 
     if (key != null){
       this.access_call(key);
+      this.http.get_user_profile(key).subscribe(( data )=>{
+        //debugger;
+        this.localstorage.set_redirect_path(data.redirect)
+        console.log(data.redirect);
+        this.router.navigate([data.redirect])
+      })
     }else{
       this.http.post_auth_user(env.guest_username,env.guest_password).subscribe((data)=>{
         console.log(data);
 
-        this.localstorage.set_api_key(data.api_key)
+        this.localstorage.set_api_key(data.api_key);
         this.access_call(data.api_key);
-
+        this.http.get_user_profile(data.api_key).subscribe(( data )=>{
+          //debugger;
+          this.localstorage.set_redirect_path(data.redirect)
+          console.log(data.redirect);
+          this.router.navigate([data.redirect])
+        })
         //set the api key
         ///console.log(data);
       });
@@ -67,6 +80,7 @@ export class AuthService {
 
     this.http.post_auth_user(user_name,user_password).subscribe((data)=>{
 
+      console.log(data)
       this.localstorage.set_api_key(data.api_key)
 
       this.access_call(data.api_key);
@@ -74,7 +88,8 @@ export class AuthService {
       this.http.get_user_profile(data.api_key).subscribe(( data )=>{
 
         this.localstorage.set_redirect_path(data.redirect)
-
+        console.log(data.redirect);
+        this.router.navigate([data.redirect])
       })
     });
 

@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+/* Customize WebKit (Chrome, Safari) scrollbars */
+::-webkit-scrollbar {
+  width: 1px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3498db; /* Color of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2980b9; /* Color of the scrollbar thumb on hover */
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Color of the scrollbar track */
+}
+
+/* Customize Internet Explorer and Edge scrollbars */
+.element {
+  -ms-overflow-style: none; /* Hide the scrollbar */
+}

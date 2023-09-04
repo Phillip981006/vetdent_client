@@ -1,0 +1,74 @@
+<div class="container p-2 addPatientPanel" >
+  <div class="row">
+    <div class="col"></div>
+    <div class="col-3 " >
+      <h5>Patients</h5>
+    </div>
+    <div class="col-1 " >
+      <img class="icon" style="width: 30px;" src="../../../assets/icon/add_circle.svg" alt=""  data-bs-toggle="modal" data-bs-target="#myModal">
+    </div>
+    <div class="col"></div>
+    <div class="col-2">
+      <div class="dropdown">
+        <img style="width: 30px;" src="../../../assets/icon/filter_alt.svg" type="button" class="icon dropdown-toggle" data-bs-toggle="dropdown">
+        <ul class="dropdown-menu">
+          <div class="form-check">
+
+            <div class="container" >
+              <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something">
+              <label class="form-check-label">All</label>
+            </div>
+
+            <div class="container" >
+              <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something">
+              <label class="form-check-label">zoo inc</label>
+            </div>
+
+            <div class="container" >
+              <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something">
+              <label class="form-check-label">Libralex</label>
+            </div>
+
+
+          </div>
+
+
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="modal" id="myModal">
+  <app-add-patient ></app-add-patient>
+</div>
+
+<div class="container mt-2 ProfilePanel " *ngFor="let patient of patients">
+
+  <div class="row profileCardHeading " >
+    <div class="col"></div>
+    <div class="col" >
+      <h5>{{patient.company}}</h5>
+    </div>
+    <div class="col"></div>
+
+  </div>
+
+  <div class="row ProfilePanelCard p-2">
+    <div class="col">
+      <img class="profileCardPhoto" src={{patient.image}} alt="">
+
+    </div>
+    <div class="col">
+      <h6>{{patient.name}}</h6>
+      <h6>{{patient.species}} </h6>
+    </div>
+    <div class="col">
+
+      <p class="profileCardStatus">{{patient.status}}</p>
+
+    </div>
+  </div>
+</div>
+
